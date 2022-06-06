@@ -1,0 +1,21 @@
+.menu {
+  margin-top: -11px;
+  margin-left: 1116px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 2%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  position: sticky;
+  top: 100vh;
+}
