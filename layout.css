@@ -1,0 +1,36 @@
+/*  */
+
+/* burgermenu */
+
+.menu.shown ul {
+  /* Vis menu-listen, når klassen ".shown" er til stede */
+  list-style: none;
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  flex: 1 1 100%;
+  flex-flow: column;
+  order: 2;
+}
+
+.toggle-btn {
+  background: transparent;
+  border: none;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+nav {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

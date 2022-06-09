@@ -9,54 +9,48 @@
   width: 100%;
 }
 
-.menu {
-  background-image: url(/foto/xdbillede.svg);
-  background-size: cover;
+body {
   margin-top: 10%;
-  /* display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  margin-right: 10%;
-  margin-top: 8%; */
-
-  /* margin-top: -11px;
-  margin-left: 700px;
-  height: 200px; */
 }
 
 ul {
-  display: grid;
   list-style: none;
-  justify-content: center;
   gap: 2%;
   text-align: right;
-  margin-right: 10%;
 }
 
 a {
   text-decoration: none;
   color: black;
-  margin-top: 10%;
+}
+
+ul a {
+  margin-right: 30px;
 }
 
 footer {
   top: 100vh;
-  text-align: center;
+  text-align: left;
   color: #faf850;
   font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 0.7rem;
 }
 
 nav {
   font-family: "Barlow Semi Condensed", sans-serif;
-  font-size: 4rem;
-  grid-column: 3/4;
+  font-size: 3rem;
 }
 
 body {
   background-color: #dce0e3;
+  background-image: url(/foto/xdbillede.svg);
+  background-size: cover;
+  background-size: 638px 501px;
+  background-repeat: no-repeat;
 }
 
 header {
-  height: 94vh;
+  height: 70vh;
 }
 
 cursor {
@@ -67,10 +61,10 @@ a:hover {
   color: #faf850;
   text-decoration: underline;
 }
-
-.forsidebillede {
-  width: 100%;
-}
+/* 
+.menu li:first-child {
+  display: none;
+} */
 
 @media (min-width: 600px) {
 }
