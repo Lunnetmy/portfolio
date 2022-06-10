@@ -1,24 +1,50 @@
-/*  */
-
+* {
+  all: unset;
+  display: revert;
+  cursor: revert;
+  box-sizing: border-box;
+}
 /* burgermenu */
 
 .menu.shown ul {
   /* Vis menu-listen, når klassen ".shown" er til stede */
   list-style: none;
-  padding: 1rem 0 1rem 0;
+  padding: 0 0 1rem 0;
   display: flex;
   flex: 1 1 100%;
   flex-flow: column;
   order: 2;
+  padding-left: 2rem;
 }
 
 .toggle-btn {
   background: transparent;
   border: none;
+  padding: 2rem;
   min-width: 44px;
   min-height: 44px;
-  font-size: 1.1rem;
+  font-size: 3rem;
   cursor: pointer;
+}
+
+body {
+  line-height: 1.5rem;
+  background-color: #dce0e3;
+}
+
+img {
+  max-width: 100%;
+  padding: 1rem;
+}
+
+main {
+  display: grid;
+  margin: 2rem;
+  line-height: 1.5rem;
+}
+
+.menu ul {
+  display: none; /* Fjern menu-listen som standard */
 }
 
 nav {
@@ -34,3 +60,60 @@ a {
   text-decoration: none;
   color: black;
 }
+
+h1,
+h2,
+h3,
+p {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  padding-top: 1rem;
+  padding-bottom: 0.6rem;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 1rem;
+  padding-bottom: 0.8rem;
+}
+
+footer {
+  display: block;
+  /* top: 100vh; */
+  color: #faf850;
+  text-align: center;
+}
+
+.button {
+  color: black;
+  padding: 0px 8px 0px 8px;
+  margin: auto;
+  border-radius: 25px;
+  border-style: solid;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  border-width: 3px;
+}
+a:hover {
+  color: #faf850;
+  border-color: black;
+}
+
+/*  */
+
+/* 
+grid_1 {
+} */

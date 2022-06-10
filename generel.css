@@ -9,10 +9,6 @@
   width: 100%;
 }
 
-body {
-  margin-top: 10%;
-}
-
 ul {
   list-style: none;
   gap: 2%;
@@ -44,9 +40,9 @@ nav {
 body {
   background-color: #dce0e3;
   background-image: url(/foto/xdbillede.svg);
-  background-size: cover;
   background-size: 638px 501px;
   background-repeat: no-repeat;
+  margin-top: 4rem;
 }
 
 header {
