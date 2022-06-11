@@ -218,7 +218,6 @@ a:hover {
 #erik_container {
   width: 27%;
   aspect-ratio: 934/1242;
-  position: absolute;
   top: 34%;
   left: 32%;
 }
@@ -231,9 +230,11 @@ a:hover {
 
 .erik {
   background-image: url(/foto/erik.svg);
+  cursor: pointer;
 }
 
 .eglad {
   background-image: url(/foto/eglad.svg);
   aspect-ratio: 934/105;
+  cursor: default;
 }
