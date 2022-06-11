@@ -150,24 +150,17 @@ a:hover {
 
   /* OM */
 
-  .grid_2 {
+  .grid_2_1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px;
-  }
-  .col_foto {
-    grid-template-columns: 1;
-  }
-  .col_1_1 {
-    grid-template-columns: 1;
   }
 
-  .col_1_2 {
-    grid-template-columns: 1;
+  .col_foto {
+    max-width: 100%;
   }
-  .col_1_3 {
-    grid-template-columns: 2;
+  .grid_2_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -178,6 +171,8 @@ a:hover {
     margin-top: 0.4rem;
     margin-left: 16px;
   }
+
+  /* OM */
 }
 
 @media (min-width: 1200px) {
@@ -188,7 +183,41 @@ a:hover {
   .grid_1_1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 1.6rem;
     margin: 2rem;
   }
+
+  /* OM */
+
+  .grid_2 {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+/******************   animation css  ************************/
+
+#erik_container {
+  width: 27%;
+  aspect-ratio: 934/1242;
+  position: absolute;
+  top: 34%;
+  left: 32%;
+}
+
+#erik_sprite {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.erik {
+  background-image: url(/foto/erik.svg);
+}
+
+.eglad {
+  background-image: url(/foto/eglad.svg);
+  aspect-ratio: 934/105;
 }

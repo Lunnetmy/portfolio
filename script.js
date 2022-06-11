@@ -24,3 +24,24 @@ function toggleMenu() {
 }
 // Tilføj et klik-event til "btn", der sætter toggleMenu-funktionen i gang
 btn.addEventListener("click", toggleMenu);
+
+window.addEventListener("load", sidenVises);
+
+function sidenVises() {
+  console.log("sidenvises");
+  document.querySelector("#erik_sprite").addEventListener("mousedown", clickHandler);
+}
+
+function clickHandler() {
+  console.log("clicHandler");
+  document.querySelector("#erik_sprite").classList.add("eglad");
+  document.querySelector("#erik_sprite").addEventListener("", Reset);
+}
+
+// //gør erik normal igen
+// function Reset() {
+//   document.querySelector("#erik_sprite").offsetLeft;
+//   document.querySelector("#erik_sprite").classList.add("erik");
+// document.querySelector("#erik_sprite").classList = "";
+// document.querySelector("#erik_sprite").offsetLeft;
+// document.querySelector("#erik_sprite").classList.add("erik");
