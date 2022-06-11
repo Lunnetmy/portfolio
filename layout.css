@@ -112,8 +112,60 @@ a:hover {
   border-color: black;
 }
 
-/*  */
+/*layout side web*/
 
-/* 
-grid_1 {
-} */
+@media (min-width: 600px) {
+  .grid_1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 0.4rem;
+    margin-left: 16px;
+  }
+
+  p {
+    max-width: 65ch;
+  }
+  .grid_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+  }
+
+  h2 {
+    margin-top: 1rem;
+  }
+
+  .col4 {
+    grid-column: 1;
+  }
+
+  .col5 {
+    grid-column: 2;
+  }
+
+  img {
+    padding-bottom: 0rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .grid_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0.4rem;
+    margin-left: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    padding: 3rem;
+  }
+
+  .grid_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+    margin: 2rem;
+  }
+}

@@ -21,20 +21,20 @@ a {
 }
 
 ul a {
-  margin-right: 30px;
+  margin-right: 1.6rem;
 }
 
 footer {
-  top: 100vh;
-  text-align: left;
   color: #faf850;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 0.7rem;
+  position: sticky;
 }
 
 nav {
   font-family: "Barlow Semi Condensed", sans-serif;
-  font-size: 3rem;
+  font-size: 2.3rem;
+  margin-top: -1.4rem;
 }
 
 body {
@@ -63,4 +63,41 @@ a:hover {
 } */
 
 @media (min-width: 600px) {
+  body {
+    background-size: 833px 662px;
+  }
+  nav {
+    font-size: 3.4rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    background-size: 995px 918px;
+  }
+
+  ul a {
+    margin-right: 3rem;
+    margin-top: 4.6rem;
+  }
+
+  nav {
+    font-size: 4.5rem;
+    margin-top: 9.6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-size: 1226px 809px;
+  }
+
+  ul a {
+    margin-right: 3.7rem;
+  }
+  nav {
+    font-size: 6rem;
+    margin-top: 5rem;
+  }
 }
