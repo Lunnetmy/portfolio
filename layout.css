@@ -99,7 +99,6 @@ footer {
   /* top: 100vh; */
   color: #faf850;
   text-align: center;
-  background-color: white;
 }
 
 .button {
@@ -123,11 +122,11 @@ a:hover {
 iframe {
   width: 100%;
   height: auto;
-
   aspect-ratio: 16 / 9;
 }
 
 @media (min-width: 600px) {
+  /* WEB */
   .grid_1 {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -159,6 +158,25 @@ iframe {
   .col_foto img {
     width: 80%;
   }
+
+  /* ANIMATION */
+  .grid_3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid yellow;
+  }
+
+  .grid_3_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid_3_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 800px) {
@@ -177,6 +195,7 @@ iframe {
     padding: 3rem;
   }
 
+  /* WEB */
   .grid_1_1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -227,8 +246,7 @@ iframe {
 #erik_container {
   width: 27%;
   aspect-ratio: 934/1242;
-  top: 34%;
-  left: 32%;
+  width: 100%;
 }
 
 #erik_sprite {
