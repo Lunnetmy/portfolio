@@ -1,5 +1,6 @@
 const btn = document.querySelector(".toggle-btn");
 const menu = document.querySelector(".menu");
+const btnErik = document.querySelector(".erik");
 // Lav variablen "btn", der henviser til ".toggle-btn"
 // Lav variablen "menu", der henviser til ".main-menu"
 
@@ -32,16 +33,11 @@ function sidenVises() {
   document.querySelector("#erik_sprite").addEventListener("mousedown", clickHandler);
 }
 
-function clickHandler() {
-  console.log("clicHandler");
-  document.querySelector("#erik_sprite").classList.add("eglad");
-  document.querySelector("#erik_sprite").addEventListener("", Reset);
+function sidenVises() {
+  document.querySelector("#erik_sprite").addEventListener("mousedown", clickHandler);
 }
 
-// //gør erik normal igen
-// function Reset() {
-//   document.querySelector("#erik_sprite").offsetLeft;
-//   document.querySelector("#erik_sprite").classList.add("erik");
-// document.querySelector("#erik_sprite").classList = "";
-// document.querySelector("#erik_sprite").offsetLeft;
-// document.querySelector("#erik_sprite").classList.add("erik");
+function clickHandler() {
+  // toggle - putte en klasse på og fjerne igen
+  document.querySelector("#erik_sprite").classList.toggle("eglad");
+}
