@@ -1,6 +1,5 @@
 const btn = document.querySelector(".toggle-btn");
 const menu = document.querySelector(".menu");
-const btnErik = document.querySelector(".erik");
 // Lav variablen "btn", der henviser til ".toggle-btn"
 // Lav variablen "menu", der henviser til ".main-menu"
 
