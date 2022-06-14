@@ -86,7 +86,6 @@ h3 {
   padding-bottom: 0.6rem;
   text-decoration: underline;
   font-size: 1.4rem;
-  text-align: center;
 }
 
 p {
@@ -97,7 +96,7 @@ p {
 
 .div_p {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr; */
 }
 
 .div_p p {
@@ -118,7 +117,7 @@ footer {
   border-radius: 25px;
   border-style: solid;
   font-family: "Barlow Semi Condensed", sans-serif;
-  border-width: 3px;
+  max-width: 7rem;
 }
 a:hover {
   color: #faf850;
@@ -133,6 +132,35 @@ iframe {
   width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;
+}
+
+.div_h1 h1 {
+  width: 3rem;
+}
+
+#glow {
+  animation-name: glow_kf;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+/* @keyframes glow_kf {
+  from {
+    filter: drop-shadow(0px 0px 30px yellow);
+  }
+} */
+
+.size {
+  font-size: 0.6em;
+}
+
+@keyframes glow_kf {
+  from {
+    color: black;
+  }
+  to {
+    color: yellow;
+  }
 }
 
 @media (min-width: 600px) {
@@ -186,10 +214,31 @@ iframe {
   .grid_3_2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 3rem;
   }
 }
 
+.grid4_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: white;
+  margin-bottom: 3rem;
+}
+
+/* UX */
+.grid4_2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid yellow;
+}
+
 @media (min-width: 800px) {
+  .size {
+    font-size: 1rem;
+  }
   .grid_1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -197,7 +246,10 @@ iframe {
     margin-left: 16px;
   }
 
-  /* OM */
+  /* UX */
+  .grid4_1 {
+    padding: 4rem;
+  }
 }
 
 @media (min-width: 1200px) {
