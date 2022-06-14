@@ -38,8 +38,16 @@ body {
   margin-top: 4rem;
 }
 
+p {
+  font-size: 0.8rem;
+  padding-bottom: 0.8rem;
+  max-width: 65ch;
+  margin-right: 1.3rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
 header {
-  height: 76vh;
+  height: 43vh;
 }
 
 footer {
@@ -56,11 +64,32 @@ a:hover {
   color: #faf850;
   text-decoration: underline;
 }
-/* 
-.menu li:first-child {
-  display: none;
-} */
 
+main {
+  margin-top: 4rem;
+}
+
+img {
+  width: 100%;
+}
+
+.grid_01 img {
+  margin: 1rem;
+}
+
+.grid_01 p {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #faf850;
+  padding: 0.9rem;
+}
+
+.grid_01 {
+  margin: 3rem;
+}
 @media (min-width: 600px) {
   body {
     background-size: 833px 662px;
@@ -68,6 +97,14 @@ a:hover {
   nav {
     font-size: 3.4rem;
     margin-top: 2rem;
+  }
+  header {
+    height: 60vh;
+  }
+
+  p {
+    font-size: 1rem;
+    text-align: center;
   }
 }
 
@@ -85,18 +122,33 @@ a:hover {
     font-size: 4.5rem;
     margin-top: 9.6rem;
   }
+  .grid_01 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    margin: 4;
+  }
+}
+header {
+  height: 73vh;
 }
 
 @media (min-width: 1200px) {
   body {
     background-size: 1226px 809px;
   }
-
+  header {
+    height: 82vh;
+  }
   ul a {
     margin-right: 3.7rem;
   }
   nav {
     font-size: 6rem;
     margin-top: 5rem;
+  }
+
+  p {
+    font-size: 1.8rem;
   }
 }

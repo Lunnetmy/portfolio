@@ -28,7 +28,6 @@
 }
 
 body {
-  line-height: 1.5rem;
   background-color: #dce0e3;
 }
 
@@ -92,6 +91,8 @@ p {
   font-size: 0.8rem;
   padding-bottom: 0.8rem;
   max-width: 65ch;
+  margin-right: 1.3rem;
+  line-height: 1.6;
 }
 
 .div_p {
@@ -155,6 +156,9 @@ iframe {
   font-size: 0.6em;
 }
 
+iframe {
+  padding-top: 1rem;
+}
 @keyframes glow_kf {
   from {
     color: black;
@@ -167,8 +171,43 @@ iframe {
   max-width: 11rem;
 }
 
+.btn_pilot {
+  max-width: 5rem;
+}
+
 .btn_indhold {
   max-width: 15rem;
+}
+
+.grid_5_1 {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+}
+/******************   animation css  ************************/
+
+#erik_container {
+  width: 27%;
+  aspect-ratio: 934/1242;
+  width: 100%;
+}
+
+#erik_sprite {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.erik {
+  background-image: url(/foto/erik.svg);
+  cursor: pointer;
+}
+
+.eglad {
+  background-image: url(/foto/eglad.svg);
+  aspect-ratio: 934/105;
+  cursor: pointer;
 }
 
 @media (min-width: 600px) {
@@ -212,7 +251,7 @@ iframe {
     grid-template-columns: 1fr 1fr;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    border: 1px solid yellow;
+    border: 1px solid #faf850;
   }
 
   .grid_3_1 {
@@ -229,6 +268,14 @@ iframe {
   .grid_5_2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-top: 5rem;
+  }
+
+  .text_indhold {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -250,6 +297,10 @@ iframe {
 }
 
 @media (min-width: 800px) {
+  p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
   .size {
     font-size: 1rem;
   }
@@ -277,9 +328,12 @@ iframe {
     margin-top: 3rem;
   }
 
-  .grid_5_1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .grid_5_1 img {
+    padding: 0%;
+  }
+
+  .text_indhold p {
+    max-width: 108ch;
   }
 }
 
@@ -287,7 +341,9 @@ iframe {
   main {
     padding: 3rem;
   }
-
+  p {
+    font-size: 1.4rem;
+  }
   /* WEB */
   .grid_1_1 {
     display: grid;
@@ -328,30 +384,5 @@ iframe {
 
   .col_1_1 p {
     max-width: 42ch;
-  }
-
-  /******************   animation css  ************************/
-
-  #erik_container {
-    width: 27%;
-    aspect-ratio: 934/1242;
-    width: 100%;
-  }
-
-  #erik_sprite {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-  }
-
-  .erik {
-    background-image: url(/foto/erik.svg);
-    cursor: pointer;
-  }
-
-  .eglad {
-    background-image: url(/foto/eglad.svg);
-    aspect-ratio: 934/105;
-    cursor: pointer;
   }
 }
