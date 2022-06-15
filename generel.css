@@ -27,15 +27,10 @@ ul a {
 nav {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 2.3rem;
-  margin-top: -1.4rem;
 }
 
 body {
   background-color: #dce0e3;
-  background-image: url(foto/xdbillede.svg);
-  background-size: 638px 501px;
-  background-repeat: no-repeat;
-  margin-top: 4rem;
 }
 
 p {
@@ -47,7 +42,11 @@ p {
 }
 
 header {
-  height: 46vh;
+  background-image: url(foto/xdbillede.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 3rem;
+  aspect-ratio: 16/9;
 }
 
 footer {
@@ -100,9 +99,6 @@ img {
     font-size: 3.4rem;
     margin-top: 2rem;
   }
-  header {
-    height: 62vh;
-  }
 
   p {
     font-size: 1rem;
@@ -125,9 +121,6 @@ img {
     margin-right: 3rem;
     margin-top: 4.6rem;
   }
-  header {
-    height: 72vh;
-  }
 
   nav {
     font-size: 4.5rem;
@@ -144,9 +137,7 @@ img {
   body {
     background-size: 1226px 809px;
   }
-  header {
-    height: 84vh;
-  }
+
   ul a {
     margin-right: 3.7rem;
   }
