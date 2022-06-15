@@ -106,10 +106,11 @@ p {
 
 footer {
   display: block;
-  /* top: 100vh; */
-  color: #faf850;
-  /* text-align: center; */
   margin-left: 1rem;
+}
+
+footer p {
+  color: #faf850;
 }
 
 .button {
@@ -159,7 +160,7 @@ iframe {
     color: black;
   }
   to {
-    color: yellow;
+    color: faf850;
   }
 }
 .btn_animation {
@@ -195,12 +196,12 @@ iframe {
 }
 
 .erik {
-  background-image: url(/foto/erik.svg);
+  background-image: url(foto/erik.svg);
   cursor: pointer;
 }
 
 .eglad {
-  background-image: url(/foto/eglad.svg);
+  background-image: url(foto/eglad.svg);
   aspect-ratio: 934/105;
   cursor: pointer;
 }
